@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/inlogpagina.css">
+	<title>RET Verhalenwebsite</title>
+</head>
+
+<header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html"><img src="img/logo.svg" alt="Logo van RET"></a>
+			</li>
+			<li>
+				<a href="inloggen.html"><img src="img/login.svg" class="microinteractie" alt="Inloggen"></a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<h1>Registreren</h1>
+<form action="aanmeldenGelukt.html">
+
+  <fieldset>
+    <legend>Persoonlijke gegevens</legend>
+
+    <label for="naam">Naam* :</label>
+    <input type="text" id="naam" required>
+    <br>
+
+    <label for="tussenvoegsel">Tussenvoegsel</label>
+    <input type="text" id="tussenvoegsel">
+    <br>
+
+    <label for="achternaam">Achternaam*:</label>
+    <input type="text" id="achternaam" required>
+    <br>
+
+    <label for="telefoon">Telefoonnummer:</label>
+    <input type="tel" id="telefoon">
+    <br>
+
+    <label for="geslacht">Geslacht:</label>
+    <input type="radio" name="geslacht" value="man" checked> man
+    <input type="radio" name="geslacht" value="vrouw"> vrouw
+    <input type="radio" name="geslacht">anders:
+    <input type="text" name="geslacht" placeholder="vul zelf in">
+    <br>
+
+    <label for="geboortedatum">Geboortedatum:</label>
+    <input type="date" id="geboortedatum">
+    <br>
+
+    <label for="land">Land:</label>
+    <select name="land" id="land">
+      <option value="nl">Nederland</option>
+      <option value="b">Belgie</option>
+      <option value="g">Duitsland</option>
+    </select>
+
+  </fieldset>
+  <fieldset>
+    <legend>Login gegevens</legend>
+    <label for="username"> E-mail *:</label>
+    <input id="username" type="email" required>
+    <br>
+
+    <label for="wachtwoord">Wachtwoord *: </label>
+    <input id="wachtwoord" type="password" required>
+    <br>
+
+    <label for="wachtwoordControle">Wachtwoord nogmaals: </label>
+    <input id="wachtwoordControle" type="password" required>
+    <br>
+  </fieldset>
+
+  <label for="opmerkingen">Opmerkingen:</label>
+  <br>
+  <textarea name="" id="opmerkingen" cols="30" rows="10"></textarea>
+  <br>
+
+
+  <input type="checkbox" name="leeftijd" value="leeftijd">
+  <label for="nieuwsbrief">Stuur mij de maandelijkse nieuwsbrief</label>
+  <br>
+
+  <input type="submit" value="Vestuur">
+
+</form>
+
+
+<!--bron codepen rouws-->
